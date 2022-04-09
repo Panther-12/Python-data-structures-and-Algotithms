@@ -18,13 +18,13 @@ def locate_card(cards, query):
         # Average the sum of the lowest and highest points to get the mid point
         # Absolute division is used to eliminate errors from lists containing odd no of elements
         mid = (lo+hi)//2
-        if cards [mid] == query:
+        if cards[mid] == query:
             return mid
         elif cards[mid] < query:
             hi = mid-1
         elif cards[mid] > query:
-            lo = mid + 1
-    return print("mid position: {mid}  mid value: {value} query:{query}".format(mid=mid, value=cards[mid], query=query))
+            lo = mid+1
+    #return print("mid position: {mid}  mid value: {value} query:{query}".format(mid=mid, value=cards[mid], query=query))
 
 ### ANALYZING ALGORITHM COMPLEXITY AND FIND INEFFICIENCY ####
    
